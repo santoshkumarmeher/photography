@@ -9,6 +9,7 @@
     width: 100vh-4rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: black;
     padding-left: 2rem;
