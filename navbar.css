@@ -1,58 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-}
-.navbar{
-    width: 100vh-4rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: black;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: white;
-    overflow: hidden;
-}
-.logo{
-    height: min(100px,10vh);
-    /* background-color: black; */
-    /* color: white; */
-    font-size: 2.25rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 10vw;
-}
-a{
-    text-decoration: none;
-    width: fit-content;
-    color: white;
-}
-.navitems {
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    width: 70vw;
-}
-.social {
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    width: 10vw;
+    box-sizing: border-box;
 }
 
-footer{
-    width: 100vw;
+/* Navbar */
+.navbar {
+    width: 100%;  /* Full width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Wraps items if needed */
+    background-color: black;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Nav items */
+.navitems {
+    display: flex;
+    gap: 2rem;  /* Space between links */
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+/* Social icons */
+.social {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    width: 100%;
     margin-top: 2rem;
-    height: min(50px,2rem);
+    padding: 0.5rem;
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 0.9rem;
 }
 
+/* ===============================
+   RESPONSIVE BREAKPOINTS
+   =============================== */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .navitems {
+        font-size: 1rem;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    .social {
+        justify-content: center;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;  /* Stack vertically */
+        align-items: center;
+    }
+    .logo {
+        margin-bottom: 1rem;
+    }
+    .navitems {
+        flex-direction: column;
+        gap: 0.8rem;
+        align-items: center;
+        width: 100%;
+    }
+    .social {
+        margin-top: 0.8rem;
+    }
+}
