@@ -6,7 +6,9 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
-
+.instagram-logo{
+    width: 3rem;
+}
 /* Navbar */
 .navbar {
     width: 100%;  /* Full width */
@@ -32,6 +34,7 @@
 a {
     text-decoration: none;
     color: white;
+    transition: 0.2s ease;
 }
 
 /* Nav items */
@@ -40,8 +43,11 @@ a {
     gap: 2rem;  /* Space between links */
     font-size: 1.2rem;
     flex-wrap: wrap;
-}
 
+}
+a:hover{
+    scale: 1.2;
+}
 /* Social icons */
 .social {
     display: flex;
