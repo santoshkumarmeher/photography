@@ -36,14 +36,13 @@ h1{
     #gallery { column-count: 2; }
   }
   @media (max-width: 500px) {
-    #gallery { column-count: 1; }
+    #gallery { column-count: 2; }
   }
 
 /* Fullscreen overlay */
 #lightbox {
     position: fixed;
-    display: none;
-    /* hidden by default */
+    display: none; /* hidden by default */
     top: 0;
     left: 0;
     width: 100%;
@@ -52,20 +51,62 @@ h1{
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    padding: 1rem; /* ensures image doesn't stick to edges */
+    box-sizing: border-box;
 }
 
 #lightbox img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 85vh; /* fit within viewport height */
     border-radius: 8px;
+    object-fit: contain; /* keep original ratio */
 }
 
+/* Close button */
 #lightbox span {
     position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
+    top: 1rem;
+    right: 1.2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s;
+}
+
+#lightbox span:hover {
+    transform: scale(1.2);
+}
+
+/* ====================================
+   Responsive Adjustments
+   ==================================== */
+
+/* Tablets */
+@media (max-width: 900px) {
+    #lightbox img {
+        max-height: 80vh;
+    }
+    #lightbox span {
+        font-size: 2rem;
+        top: 0.8rem;
+        right: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #lightbox {
+        padding: 0.5rem;
+    }
+    #lightbox img {
+        max-height: 75vh;
+        max-width: 95%;
+    }
+    #lightbox span {
+        font-size: 1.8rem;
+        top: 0.5rem;
+        right: 0.8rem;
+    }
 }
