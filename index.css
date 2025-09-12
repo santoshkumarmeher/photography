@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1{
+    margin: 25px;
+}
+#gallery {
+    column-count: 4;
+    /* number of columns on large screens */
+    column-gap: 15px;
+    /* gap between columns */
+    width: 100%;
+    max-width: 90vw;
+    /* center container */
+    margin: auto;
+}
+
+#gallery img {
+    width: 100%;
+    /* take full width of column */
+    height: auto;
+    /* keep original ratio */
+    margin-bottom: 15px;
+    /* spacing between images */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    break-inside: avoid;
+    /* prevents image from breaking across columns */
+    cursor: pointer;
+}
+
+#gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+    #gallery {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    #gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery {
+        column-count: 1;
+    }
+}
+
+/* Fullscreen overlay */
+#lightbox {
+    position: fixed;
+    display: none;
+    /* hidden by default */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+#lightbox span {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}

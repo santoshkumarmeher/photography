@@ -25,7 +25,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 20vw;
+    width: 10vw;
 }
 a{
     text-decoration: none;
@@ -49,6 +49,7 @@ a{
 
 footer{
     width: 100vw;
+    margin-top: 2rem;
     height: min(50px,2rem);
     background-color: black;
     color: white;
