@@ -19,6 +19,7 @@
     /* Full width */
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     /* Wraps items if needed */
@@ -108,12 +109,9 @@ footer {
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
+        justify-content: center;
         /* Stack vertically */
         align-items: center;
-    }
-
-    .logo {
-        margin-bottom: 1rem;
     }
 
     .navitems {
