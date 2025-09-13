@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     color: white;
-    padding-left: 3rem;
+    padding: 0 3rem;
 }
 
 /* Links */
@@ -51,6 +51,7 @@ a {
     /* Space between links */
     font-size: 1.2rem;
     flex-wrap: wrap;
+    padding: 0 3rem;
 
 }
 
