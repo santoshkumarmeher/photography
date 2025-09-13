@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    /* display: flex; */
+}
+
+.design-page{
+    width: 50vw;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.design-page p{
+    color: rgb(230, 255, 9);
+    font-size: 2rem;
+}
+
+.design-page span{
+    font-size: 4rem;
+}
