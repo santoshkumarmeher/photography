@@ -6,18 +6,22 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
-.instagram-logo{
+
+.instagram-logo {
     width: 3rem;
 }
+
 /* Navbar */
 .navbar {
-    width: 100%;  /* Full width */
+    width: 100%;
+    /* Full width */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;  /* Wraps items if needed */
+    flex-wrap: wrap;
+    /* Wraps items if needed */
     background-color: black;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     color: white;
 }
 
@@ -28,6 +32,7 @@
     display: flex;
     align-items: center;
     color: white;
+    padding-left: 3rem;
 }
 
 /* Links */
@@ -37,17 +42,22 @@ a {
     transition: 0.2s ease;
 }
 
+
+
 /* Nav items */
 .navitems {
     display: flex;
-    gap: 2rem;  /* Space between links */
+    gap: 2rem;
+    /* Space between links */
     font-size: 1.2rem;
     flex-wrap: wrap;
 
 }
-a:hover{
+
+a:hover {
     scale: 1.2;
 }
+
 /* Social icons */
 .social {
     display: flex;
@@ -79,6 +89,7 @@ footer {
         justify-content: center;
         margin-top: 0.5rem;
     }
+
     .social {
         justify-content: center;
         margin-top: 0.5rem;
@@ -89,18 +100,22 @@ footer {
 /* Mobile */
 @media (max-width: 600px) {
     .navbar {
-        flex-direction: column;  /* Stack vertically */
+        flex-direction: column;
+        /* Stack vertically */
         align-items: center;
     }
+
     .logo {
         margin-bottom: 1rem;
     }
+
     .navitems {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 0.8rem;
         align-items: center;
         width: 100%;
     }
+
     .social {
         margin-top: 0.8rem;
     }

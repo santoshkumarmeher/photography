@@ -19,6 +19,8 @@ body {
     width: 100%;
     max-width: 90vw;
     margin: auto;
+    /* justify-content: space-between; */
+    /* align-items: self-end; */
   }
 
   #gallery img {
