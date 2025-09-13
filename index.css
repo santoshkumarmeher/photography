@@ -89,6 +89,50 @@ body {
 #lightbox span:hover {
     transform: scale(1.2);
 }
+/* Pagination Container */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Page Buttons */
+#pagination button {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* Hover Effect */
+#pagination button:hover:not(:disabled) {
+    background: white;
+    color: #000000;
+    border: 2px solid white;
+    border-color: #ffffff;
+}
+
+/* Active Page (disabled button) */
+#pagination button:disabled {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    cursor: default;
+    font-weight: bold;
+}
+
+/* Prev/Next Buttons */
+#pagination button:first-child,
+#pagination button:last-child {
+    font-weight: bold;
+}
+
 
 /* ====================================
    Responsive Adjustments
