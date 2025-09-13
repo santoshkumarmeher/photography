@@ -1,23 +1,25 @@
-body{
-    background-color: black;
-    /* display: flex; */
-}
+
 
 .design-page{
-    width: 50vw;
+    width: 100vw;
     height: 80vh;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 .design-page p{
-    color: rgb(230, 255, 9);
-    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+
+    background-color: white;
 }
 
-.design-page span{
-    font-size: 4rem;
+.design-page img{
+    background: transparent;
+
 }
 
 
